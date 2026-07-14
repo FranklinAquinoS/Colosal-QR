@@ -1,0 +1,319 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+  background: #FFFDFD;
+  color: #333333;
+  --color-bg: #FFFDFD;
+  --color-primary: #F38B96;
+  --color-cta: #EB6F9B;
+  --color-soft: #F7C7D4;
+  --color-surface: #FAF5F7;
+  --color-text: #333333;
+  --color-text-secondary: #6B6B6B;
+  --color-border: #ECECEC;
+  --color-gold: #D3CD84;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #FFFDFD 0%, #FCF7F8 55%, #FFFDFD 100%);
+  color: var(--color-text);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(243, 139, 150, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.55), transparent 22%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.card {
+  width: min(680px, 100%);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(236, 236, 236, 0.85);
+  border-radius: 32px;
+  box-shadow: 0 26px 55px rgba(243, 139, 150, 0.12);
+  padding: 2rem;
+  backdrop-filter: blur(14px);
+}
+
+.card header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1.6rem;
+}
+
+.card h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  letter-spacing: -0.03em;
+  color: #333333;
+}
+
+.card p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+
+.button-primary,
+.button-secondary,
+.button-back {
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #F38B96 0%, #EB6F9B 100%);
+  color: white;
+  box-shadow: 0 18px 30px rgba(235, 111, 155, 0.22);
+  padding: 1rem 1.4rem;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+}
+
+.button-secondary {
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 1rem 1.4rem;
+  border: 1px solid var(--color-border);
+}
+
+.button-back {
+  background: rgba(243, 139, 150, 0.12);
+  color: #B13F4F;
+  padding: 0.95rem 1.25rem;
+}
+
+.button-back:hover {
+  background: rgba(243, 139, 150, 0.2);
+}
+
+.info-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-block {
+  background: linear-gradient(180deg, rgba(243, 139, 150, 0.08), rgba(255, 255, 255, 0.75));
+  border: 1px solid rgba(236, 236, 236, 0.9);
+  border-radius: 24px;
+  padding: 1.2rem 1.3rem;
+}
+
+.info-block strong {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: var(--color-text);
+}
+
+.info-block span {
+  color: var(--color-text-secondary);
+}
+
+.accent-text {
+  color: var(--color-primary);
+}
+
+.small-note {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.schedule-list {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: minmax(120px, 170px) 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.05rem 1.2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), #ffffff);
+  border: 1px solid rgba(236, 236, 236, 0.95);
+  border-radius: 22px;
+  box-shadow: 0 16px 28px rgba(243, 139, 150, 0.08);
+}
+
+.schedule-item strong {
+  font-size: 1rem;
+  color: #2f2f2f;
+}
+
+.schedule-item span {
+  text-align: right;
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+}
+
+.schedule-item:nth-child(6) span {
+  color: #c47a1d;
+}
+
+.schedule-item:last-child span {
+  color: #b13f4f;
+}
+
+.bank-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.3rem;
+}
+
+.bank-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), #ffffff);
+  border: 1px solid rgba(236, 236, 236, 0.9);
+  border-radius: 28px;
+  padding: 1.4rem;
+  box-shadow: 0 24px 40px rgba(243, 139, 150, 0.08);
+}
+
+.bank-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bank-logo {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.bank-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.bank-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.bank-owner {
+  margin: 0.2rem 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.bank-card__body {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.bank-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(236, 236, 236, 0.8);
+}
+
+.bank-label {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+.copy-link {
+  appearance: none;
+  border: none;
+  background: none;
+  color: var(--color-cta);
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.copy-link:hover {
+  color: #d1416e;
+}
+
+.note-panel {
+  margin-top: 1.6rem;
+  padding: 1rem 1.1rem;
+  border-radius: 24px;
+  background: rgba(243, 139, 150, 0.08);
+  border: 1px solid rgba(243, 139, 150, 0.18);
+  color: var(--color-text-secondary);
+  box-shadow: 0 10px 30px rgba(243, 139, 150, 0.08);
+}
+
+.copy-toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  background: rgba(17, 17, 17, 0.9);
+  color: white;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 200ms ease, transform 200ms ease;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.copy-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 620px) {
+  .card {
+    padding: 1.6rem;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+}

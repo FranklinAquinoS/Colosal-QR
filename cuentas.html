@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuentas Bancarias - Colosal Bags</title>
+    <link rel="stylesheet" href="secondary.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <article class="card">
+        <header>
+          <p class="small-note">Datos listos para copiar</p>
+          <h1>Cuentas Bancarias</h1>
+          <p>Haz clic sobre el número de cuenta o la cédula para copiarlo automáticamente al portapapeles.</p>
+        </header>
+
+        <div class="bank-list">
+          <section class="bank-card">
+            <div class="bank-card__header">
+              <figure class="bank-logo">
+                <img src="popular.png" alt="Logo Banco Popular" />
+              </figure>
+              <div>
+                <p class="bank-name">Banco Popular</p>
+                <p class="bank-owner">Dianne Stephania Pérez García</p>
+              </div>
+            </div>
+            <div class="bank-card__body">
+              <div class="bank-row">
+                <span class="bank-label">Cuenta corriente</span>
+                <button type="button" class="copy-link" data-copy="popular-cuenta">830728192</button>
+              </div>
+              <div class="bank-row">
+                <span class="bank-label">Cédula</span>
+                <button type="button" class="copy-link" data-copy="popular-cedula">402-2689435-6</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="bank-card">
+            <div class="bank-card__header">
+              <figure class="bank-logo">
+                <img src="BHD.webp" alt="Logo BHD" />
+              </figure>
+              <div>
+                <p class="bank-name">BHD</p>
+                <p class="bank-owner">Dianne Stephania Pérez García</p>
+              </div>
+            </div>
+            <div class="bank-card__body">
+              <div class="bank-row">
+                <span class="bank-label">Cuenta de ahorros</span>
+                <button type="button" class="copy-link" data-copy="bhd-cuenta">24591270031</button>
+              </div>
+              <div class="bank-row">
+                <span class="bank-label">Cédula</span>
+                <button type="button" class="copy-link" data-copy="bhd-cedula">402-2689435-6</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="bank-card">
+            <div class="bank-card__header">
+              <figure class="bank-logo">
+                <img src="BN.webp" alt="Logo Banreservas" />
+              </figure>
+              <div>
+                <p class="bank-name">Banreservas</p>
+                <p class="bank-owner">Franklin Manuel Aquino Severino</p>
+              </div>
+            </div>
+            <div class="bank-card__body">
+              <div class="bank-row">
+                <span class="bank-label">Cuenta de ahorros</span>
+                <button type="button" class="copy-link" data-copy="banreservas-cuenta">9605020888</button>
+              </div>
+              <div class="bank-row">
+                <span class="bank-label">Cédula</span>
+                <button type="button" class="copy-link" data-copy="banreservas-cedula">402-2405696-6</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="note-panel">
+          <p>📌 Una vez realizado el pago, envíanos el comprobante para confirmar tu orden.</p>
+        </div>
+
+        <div class="button-row">
+          <a class="button-back" href="index.html#principal">← Volver</a>
+        </div>
+      </article>
+    </div>
+
+    <div id="copy-toast" class="copy-toast" aria-live="polite" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
