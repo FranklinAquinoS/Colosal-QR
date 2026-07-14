@@ -21,7 +21,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #FFFDFD 0%, #FAF5F7 100%);
+  background: linear-gradient(180deg, #FDF8F8 0%, #F7E9ED 100%);
 }
 
 .page-hidden {
@@ -34,7 +34,7 @@ body {
   inset: 0;
   display: grid;
   place-items: center;
-  background: linear-gradient(180deg, #F7C7D4 0%, #FFFDFD 100%);
+  background: linear-gradient(180deg, #EFC2CC 0%, #FDF8F8 100%);
   z-index: 999;
   transition: opacity 0.8s ease;
 }
@@ -48,7 +48,7 @@ body {
   min-height: 100vh;
   opacity: 1;
   transition: opacity 0.45s ease;
-  background: linear-gradient(180deg, #FFFDFD 0%, #FCF7F8 55%, #FFFDFD 100%);
+  background: linear-gradient(180deg, #FDF8F8 0%, #F6E7EC 55%, #FDF8F8 100%);
 }
 
 .page-hidden {
@@ -66,10 +66,10 @@ body {
 }
 
 .hero-screen {
-  background: linear-gradient(180deg, #FDE8EC 0%, #F9D6DE 50%, #FFFDFD 100%);
+  background: linear-gradient(180deg, #F4D6DE 0%, #EFC5CF 50%, #FDF8F8 100%);
   border-radius: 32px;
   padding: 2rem 1.4rem 1.8rem;
-  box-shadow: 0 20px 40px rgba(243, 139, 150, 0.08);
+  box-shadow: 0 20px 40px rgba(243, 139, 150, 0.12);
   color: white;
   text-align: center;
 }
