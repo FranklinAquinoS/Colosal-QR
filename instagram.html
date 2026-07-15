@@ -3,34 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram - Colosal Bags</title>
+    <meta name="theme-color" content="#fdf9f8" />
+    <title>Instagram · Colosal Bags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="secondary.css" />
   </head>
-  <body>
-    <div class="page-container">
-      <article class="card">
-        <header>
-          <p class="small-note">Sigue nuestro estilo</p>
-          <h1>Instagram</h1>
-          <p>Descubre las novedades, colecciones y detalles detrás de Colosal Bags en nuestra cuenta.</p>
-        </header>
+  <body class="instagram-page">
+    <main class="instagram-experience">
+      <a class="instagram-back" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
 
-        <div class="info-grid">
-          <div class="info-block">
-            <strong>Perfil</strong>
-            <span>Síguenos para ver lanzamientos, looks y la vibra delicada de nuestras bolsas.</span>
-          </div>
-          <div class="info-block">
-            <strong class="accent-text">https://www.instagram.com/colosalbags</strong>
-            <span>Visita nuestra página y conecta con una comunidad elegante y femenina.</span>
-          </div>
+      <div class="ambient ambient--rose" aria-hidden="true"></div>
+      <div class="ambient ambient--olive" aria-hidden="true"></div>
+
+      <section class="instagram-copy" aria-labelledby="instagram-title">
+        <p class="instagram-eyebrow"><span></span> El universo Colosal</p>
+        <h1 id="instagram-title">Un poco más<br /><em>cerca de ti.</em></h1>
+        <p class="instagram-intro">Inspiración, nuevos estilos y cada detalle que hace especial a tu próxima Colosal.</p>
+
+        <div class="instagram-handle" aria-label="Perfil de Instagram Colosal Bags">
+          <img src="ig.png" alt="" />
+          <span>@colosalbags</span>
         </div>
 
-        <div class="button-row">
-          <a class="button-primary" href="https://www.instagram.com/colosalbags?igsh=MTQzM2c0ZHY2aXRodw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer">Ir a Instagram</a>
-          <a class="button-back" href="index.html#principal">← Volver</a>
+        <a class="instagram-cta" href="https://www.instagram.com/colosalbags?igsh=MTQzM2c0ZHY2aXRodw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer">
+          <span>Visitar Instagram</span>
+          <span class="instagram-cta__arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="instagram-note">Síguenos para descubrir lo nuevo.</p>
+      </section>
+
+      <section class="phone-stage" aria-label="Vista previa del perfil de Instagram de Colosal Bags">
+        <div class="glass-orbit glass-orbit--one" aria-hidden="true"></div>
+        <div class="glass-orbit glass-orbit--two" aria-hidden="true"></div>
+        <div class="phone-shadow" aria-hidden="true"></div>
+        <div class="phone">
+          <div class="phone__speaker" aria-hidden="true"></div>
+          <div class="phone__screen">
+            <img class="phone__profile-image" src="instagram-profile-colosal.png" alt="Captura del perfil de Instagram de Colosal Bags" />
+          </div>
         </div>
-      </article>
-    </div>
+        <p class="phone-caption">Descubre la esencia de Colosal <span>✦</span></p>
+      </section>
+    </main>
   </body>
 </html>
