@@ -10,6 +10,10 @@
   --ds-ink: var(--color-text);
   --ds-muted: var(--color-text-secondary);
   --ds-ease: cubic-bezier(.22, 1, .36, 1);
+  --location-rose: var(--ds-rose);
+  --location-rose-deep: var(--ds-rose-deep);
+  --location-olive: var(--ds-olive);
+  --location-muted: var(--ds-muted);
 }
 
 .ds-page { overflow-x: hidden; background: var(--color-bg); font-family: "DM Sans", Inter, system-ui, sans-serif; }
