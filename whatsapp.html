@@ -3,34 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WhatsApp - Colosal Bags</title>
+    <meta name="theme-color" content="#fdf9f8" />
+    <title>WhatsApp · Colosal Bags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="secondary.css" />
   </head>
-  <body>
-    <div class="page-container">
-      <article class="card">
-        <header>
-          <p class="small-note">Conexión inmediata</p>
-          <h1>WhatsApp</h1>
-          <p>Habla con Colosal Bags en un mensaje directo y recibe una atención cálida y rápida.</p>
+  <body class="whatsapp-page">
+    <main class="whatsapp-experience">
+      <a class="location-back location-back--top" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
+      <div class="whatsapp-ambient whatsapp-ambient--rose" aria-hidden="true"></div>
+      <div class="whatsapp-ambient whatsapp-ambient--olive" aria-hidden="true"></div>
+
+      <article class="whatsapp-card" aria-labelledby="whatsapp-title">
+        <header class="whatsapp-header">
+          <div class="whatsapp-heading">
+            <p class="whatsapp-eyebrow"><span></span> Hablemos <b aria-hidden="true">✦</b></p>
+            <h1 id="whatsapp-title">WhatsApp</h1>
+            <p>Escríbenos directamente o explora nuestro catálogo oficial. Queremos ayudarte a encontrar la pieza perfecta.</p>
+          </div>
+          <div class="whatsapp-emblem" aria-hidden="true">
+            <span class="whatsapp-emblem__ring whatsapp-emblem__ring--one"></span>
+            <span class="whatsapp-emblem__ring whatsapp-emblem__ring--two"></span>
+            <span class="whatsapp-emblem__core"><img src="ws.png" alt="" /></span>
+          </div>
         </header>
 
-        <div class="info-grid">
-          <div class="info-block">
-            <strong>Chat directo</strong>
-            <span>Usa el enlace para abrir nuestra conversación en WhatsApp al instante.</span>
-          </div>
-          <div class="info-block">
-            <strong class="accent-text">https://wa.me/message/ET2LDR2P23THL1</strong>
-            <span>Envíanos tu pedido o consulta y te respondo pronto.</span>
-          </div>
+        <section class="whatsapp-options" aria-label="Opciones de contacto">
+          <a class="whatsapp-option whatsapp-option--chat" href="https://wa.me/message/ET2LDR2P23THL1" target="_blank" rel="noreferrer">
+            <span class="whatsapp-option__visual whatsapp-option__visual--chat" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><path d="M10 12.5a9 9 0 0 1 9-9h10a9 9 0 0 1 9 9v10a9 9 0 0 1-9 9H20l-8.5 7v-7.4a9 9 0 0 1-1.5-5V12.5Z" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linejoin="round"/><path d="M17 17.5h14M17 23.5h9" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round"/></svg>
+            </span>
+            <span class="whatsapp-option__content"><strong>Ir a chat de WhatsApp</strong><small>Escríbenos y recibe atención personalizada.</small></span>
+            <span class="whatsapp-option__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="whatsapp-option" href="https://wa.me/c/18498516574" target="_blank" rel="noreferrer">
+            <span class="whatsapp-option__visual whatsapp-option__visual--bag" aria-hidden="true">
+              <svg viewBox="0 0 100 100" focusable="false">
+                <path d="M28 37c0-14 8-24 22-24s22 10 22 24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <path d="M20 35h60l-4 47H24l-4-47Z" fill="currentColor" fill-opacity=".15" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M34 51h32M40 63h20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+              </svg>
+            </span>
+            <span class="whatsapp-option__content"><strong>Ver catálogo de WhatsApp</strong><small>Explora todos nuestros productos disponibles.</small></span>
+            <span class="whatsapp-option__arrow" aria-hidden="true">→</span>
+          </a>
+        </section>
+
+        <aside class="whatsapp-note" aria-label="Información de atención">
+          <span class="whatsapp-note__star" aria-hidden="true">✦</span>
+          <div><strong>Atención rápida y personalizada</strong><p>Respondemos lo más pronto posible para ayudarte con cualquier consulta o pedido.</p></div>
+        </aside>
+
+        <div class="whatsapp-actions">
+          <a class="location-cta" href="https://wa.me/message/ET2LDR2P23THL1" target="_blank" rel="noreferrer"><span>Abrir WhatsApp</span><span class="whatsapp-actions__icon"><img src="ws.png" alt="" /></span></a>
+          <a class="location-back" href="index.html#principal">← Volver</a>
         </div>
 
-        <div class="button-row">
-          <a class="button-primary" href="https://wa.me/message/ET2LDR2P23THL1" target="_blank" rel="noreferrer">Abrir WhatsApp</a>
-          <a class="button-back" href="index.html#principal">← Volver</a>
-        </div>
+        <footer class="whatsapp-footer">
+          <div class="whatsapp-trust"><span aria-hidden="true">♢</span><p><strong>Tu información está segura con Colosal.</strong><small>100% confiable y privada.</small></p></div>
+          <svg class="whatsapp-leaves" viewBox="0 0 160 76" aria-hidden="true"><path d="M5 70C34 43 42 15 79 4M51 72c7-28 25-40 53-46M78 71c18-13 42-16 72-6M38 39c-12-18-11-29 5-35 11 11 9 25-5 35ZM79 24c1-20 12-28 29-23 1 16-10 26-29 23ZM108 41c14-13 28-12 38 2-12 10-26 8-38-2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </footer>
       </article>
-    </div>
+    </main>
   </body>
 </html>
