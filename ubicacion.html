@@ -3,34 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ubicación - Colosal Bags</title>
+    <meta name="theme-color" content="#fdf9f8" />
+    <title>Ubicación · Colosal Bags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="secondary.css" />
   </head>
-  <body>
-    <div class="page-container">
-      <article class="card">
-        <header>
-          <p class="small-note">Encuéntranos</p>
-          <h1>Ubicación</h1>
-          <p>Visita nuestra tienda o punto de retiro usando el enlace de ubicación oficial.</p>
-        </header>
+  <body class="location-page">
+    <main class="location-experience">
+      <a class="location-back location-back--top" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
+      <div class="location-ambient location-ambient--rose" aria-hidden="true"></div>
+      <div class="location-ambient location-ambient--olive" aria-hidden="true"></div>
 
-        <div class="info-grid">
-          <div class="info-block">
-            <strong>Dirección</strong>
-            <span>Abre el mapa para ver dónde estamos y cómo llegar fácilmente.</span>
+      <section class="location-copy" aria-labelledby="location-title">
+        <p class="location-eyebrow"><span></span> Encuéntranos</p>
+        <h1 id="location-title">Ubicación</h1>
+        <p class="location-intro">Visita nuestra tienda o punto de retiro. Estamos listas para recibirte.</p>
+
+        <div class="location-divider" aria-hidden="true"></div>
+
+        <section class="directions" aria-labelledby="directions-title">
+          <h2 id="directions-title">¿Cómo llegar?</h2>
+          <div class="direction-list">
+            <a class="direction-card" data-map-glow href="https://maps.app.goo.gl/1mfJsTRBe2RGPhLt6" target="_blank" rel="noreferrer">
+              <span class="direction-icon"><img src="https://cdn.simpleicons.org/googlemaps" alt="Google Maps" /></span>
+              <span class="direction-content"><strong>Google Maps</strong><small>Búscanos y obtén direcciones</small></span>
+              <span class="direction-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="direction-card" data-map-glow href="https://www.waze.com/live-map/directions?to=ll.18.4824%2C-69.9165" target="_blank" rel="noreferrer">
+              <span class="direction-icon"><img src="https://cdn.simpleicons.org/waze" alt="Waze" /></span>
+              <span class="direction-content"><strong>Waze</strong><small>Ruta en tiempo real</small></span>
+              <span class="direction-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="direction-card" data-map-glow href="https://m.uber.com/ul/?action=setPickup&dropoff[formatted_address]=Ensanche%20La%20Fe%2C%20Santo%20Domingo" target="_blank" rel="noreferrer">
+              <span class="direction-icon direction-icon--uber"><img src="https://cdn.simpleicons.org/uber" alt="Uber" /></span>
+              <span class="direction-content"><strong>Uber</strong><small>Pide tu viaje directo</small></span>
+              <span class="direction-arrow" aria-hidden="true">→</span>
+            </a>
           </div>
-          <div class="info-block">
-            <strong class="accent-text">Google Maps</strong>
-            <span>Te llevamos directo a nuestra ubicación con un solo clic.</span>
+        </section>
+
+        <div class="location-actions">
+          <a class="location-cta" href="https://maps.app.goo.gl/1mfJsTRBe2RGPhLt6" target="_blank" rel="noreferrer"><span>Ver ubicación completa</span><span aria-hidden="true">↗</span></a>
+          <a class="location-back" href="index.html#principal">← Volver</a>
+        </div>
+      </section>
+
+      <section class="location-visual" aria-label="Ubicación de Colosal Bags en Ensanche La Fe">
+        <div class="map-card">
+          <div class="map-art" aria-hidden="true">
+            <svg viewBox="0 0 680 500" role="img" aria-label="Mapa ilustrado de Ensanche La Fe">
+              <rect width="680" height="500" fill="#fdf9f8" />
+              <path d="M-40 110C100 80 175 150 308 116S500 28 730 84M-20 330C115 270 217 341 337 296S548 232 710 298M80-20C120 124 84 182 157 303S218 453 194 540M430-20C384 110 445 198 395 308S364 454 436 530M625-10C562 103 616 179 566 263S553 390 630 510" fill="none" stroke="#d2cd90" stroke-opacity=".45" stroke-width="30" />
+              <path d="M-40 186C97 209 144 148 271 187S468 289 722 216M-20 416C96 362 200 386 282 438S497 486 722 410M260-30C220 119 284 199 253 305S255 417 306 525M533-40C510 80 543 153 489 242S498 408 470 530" fill="none" stroke="#ffffff" stroke-width="14" />
+              <path d="M20 58L606 444M127 496L568 17M-8 274L690 183" fill="none" stroke="#f39095" stroke-opacity=".26" stroke-width="7" stroke-dasharray="18 14" />
+              <g fill="#d2cd90" fill-opacity=".34"><circle cx="90" cy="112" r="17" /><circle cx="592" cy="373" r="21" /><circle cx="514" cy="104" r="13" /><circle cx="210" cy="396" r="18" /></g>
+            </svg>
           </div>
+          <div class="map-glass" aria-hidden="true"></div>
+          <div class="map-pin" aria-hidden="true"><span></span></div>
+          <a class="map-open" href="https://maps.app.goo.gl/1mfJsTRBe2RGPhLt6" target="_blank" rel="noreferrer">Ver en mapa <span aria-hidden="true">↗</span></a>
         </div>
 
-        <div class="button-row">
-          <a class="button-primary" href="https://maps.app.goo.gl/1mfJsTRBe2RGPhLt6" target="_blank" rel="noreferrer">Ver ubicación</a>
-          <a class="button-back" href="index.html#principal">← Volver</a>
-        </div>
-      </article>
-    </div>
+        <article class="address-card">
+          <span class="address-icon" aria-hidden="true">⌖</span>
+          <div><strong>Ensanche La Fe</strong><p>Santo Domingo, Distrito Nacional<br />República Dominicana</p></div>
+        </article>
+        <p class="location-caption">Tu próxima Colosal te espera <span>✦</span></p>
+      </section>
+    </main>
   </body>
 </html>
