@@ -9,21 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="secondary.css" />
+    <link rel="stylesheet" href="design-system.css" />
   </head>
-  <body class="whatsapp-page">
-    <main class="whatsapp-experience">
-      <a class="location-back location-back--top" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
+  <body class="ds-page whatsapp-page">
+    <main class="ds-shell whatsapp-experience">
+      <a class="ds-back location-back location-back--top" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
       <div class="whatsapp-ambient whatsapp-ambient--rose" aria-hidden="true"></div>
       <div class="whatsapp-ambient whatsapp-ambient--olive" aria-hidden="true"></div>
 
-      <article class="whatsapp-card" aria-labelledby="whatsapp-title">
-        <header class="whatsapp-header">
+      <article class="ds-surface-card whatsapp-card" aria-labelledby="whatsapp-title">
+        <header class="ds-section-header whatsapp-header">
           <div class="whatsapp-heading">
-            <p class="whatsapp-eyebrow"><span></span> Hablemos <b aria-hidden="true">✦</b></p>
-            <h1 id="whatsapp-title">WhatsApp</h1>
-            <p>Escríbenos directamente o explora nuestro catálogo oficial. Queremos ayudarte a encontrar la pieza perfecta.</p>
+            <p class="ds-section-header__eyebrow whatsapp-eyebrow">Hablemos <b aria-hidden="true">✦</b></p>
+            <h1 class="ds-section-header__title" id="whatsapp-title">WhatsApp</h1>
+            <p class="ds-section-header__intro">Escríbenos directamente o explora nuestro catálogo oficial. Queremos ayudarte a encontrar la pieza perfecta.</p>
           </div>
-          <div class="whatsapp-emblem" aria-hidden="true">
+          <div class="ds-floating-icon whatsapp-emblem" aria-hidden="true">
             <span class="whatsapp-emblem__ring whatsapp-emblem__ring--one"></span>
             <span class="whatsapp-emblem__ring whatsapp-emblem__ring--two"></span>
             <span class="whatsapp-emblem__core"><img src="ws.png" alt="" /></span>
@@ -52,18 +53,18 @@
           </a>
         </section>
 
-        <aside class="whatsapp-note" aria-label="Información de atención">
-          <span class="whatsapp-note__star" aria-hidden="true">✦</span>
+        <aside class="ds-info-card whatsapp-note" aria-label="Información de atención">
+          <span class="ds-info-card__icon whatsapp-note__star" aria-hidden="true">✦</span>
           <div><strong>Atención rápida y personalizada</strong><p>Respondemos lo más pronto posible para ayudarte con cualquier consulta o pedido.</p></div>
         </aside>
 
         <div class="whatsapp-actions">
-          <a class="location-cta" href="https://wa.me/message/ET2LDR2P23THL1" target="_blank" rel="noreferrer"><span>Abrir WhatsApp</span><span class="whatsapp-actions__icon"><img src="ws.png" alt="" /></span></a>
-          <a class="location-back" href="index.html#principal">← Volver</a>
+          <a class="ds-primary-button location-cta" href="https://wa.me/message/ET2LDR2P23THL1" target="_blank" rel="noreferrer"><span>Abrir WhatsApp</span><span class="whatsapp-actions__icon"><img src="ws.png" alt="" /></span></a>
+          <a class="ds-secondary-button location-back" href="index.html#principal">← Volver</a>
         </div>
 
-        <footer class="whatsapp-footer">
-          <div class="whatsapp-trust"><span aria-hidden="true">♢</span><p><strong>Tu información está segura con Colosal.</strong><small>100% confiable y privada.</small></p></div>
+        <footer class="ds-trust-footer whatsapp-footer">
+          <div class="ds-trust-footer__copy whatsapp-trust"><span class="ds-trust-footer__icon" aria-hidden="true">♢</span><p><strong>Tu información está segura con Colosal.</strong><small>100% confiable y privada.</small></p></div>
           <svg class="whatsapp-leaves" viewBox="0 0 160 76" aria-hidden="true"><path d="M5 70C34 43 42 15 79 4M51 72c7-28 25-40 53-46M78 71c18-13 42-16 72-6M38 39c-12-18-11-29 5-35 11 11 9 25-5 35ZM79 24c1-20 12-28 29-23 1 16-10 26-29 23ZM108 41c14-13 28-12 38 2-12 10-26 8-38-2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </footer>
       </article>

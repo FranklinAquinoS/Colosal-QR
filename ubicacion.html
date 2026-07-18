@@ -9,17 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="secondary.css" />
+    <link rel="stylesheet" href="design-system.css" />
   </head>
-  <body class="location-page">
-    <main class="location-experience">
-      <a class="location-back location-back--top" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
+  <body class="ds-page location-page">
+    <main class="ds-shell location-experience">
+      <a class="ds-back location-back location-back--top" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
       <div class="location-ambient location-ambient--rose" aria-hidden="true"></div>
       <div class="location-ambient location-ambient--olive" aria-hidden="true"></div>
 
-      <section class="location-copy" aria-labelledby="location-title">
-        <p class="location-eyebrow"><span></span> Encuéntranos</p>
-        <h1 id="location-title">Ubicación</h1>
-        <p class="location-intro">Visita nuestra tienda o punto de retiro. Estamos listas para recibirte.</p>
+      <section class="ds-section-header location-copy" aria-labelledby="location-title">
+        <p class="ds-section-header__eyebrow location-eyebrow">Encuéntranos</p>
+        <h1 class="ds-section-header__title" id="location-title">Ubicación</h1>
+        <p class="ds-section-header__intro location-intro">Visita nuestra tienda o punto de retiro. Estamos listas para recibirte.</p>
 
         <div class="location-divider" aria-hidden="true"></div>
 
@@ -45,8 +46,8 @@
         </section>
 
         <div class="location-actions">
-          <a class="location-cta" href="https://maps.app.goo.gl/1mfJsTRBe2RGPhLt6" target="_blank" rel="noreferrer"><span>Ver ubicación completa</span><span aria-hidden="true">↗</span></a>
-          <a class="location-back" href="index.html#principal">← Volver</a>
+          <a class="ds-primary-button location-cta" href="https://maps.app.goo.gl/1mfJsTRBe2RGPhLt6" target="_blank" rel="noreferrer"><span>Ver ubicación completa</span><span aria-hidden="true">↗</span></a>
+          <a class="ds-secondary-button location-back" href="index.html#principal">← Volver</a>
         </div>
       </section>
 
