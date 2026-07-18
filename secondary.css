@@ -457,5 +457,67 @@ body::before {
 @keyframes locationRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes locationEnter { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes pinPulse { 0%, 100% { transform: rotate(-45deg) translate(-50%, -50%) scale(1); } 50% { transform: rotate(-45deg) translate(-50%, -58%) scale(1.06); } }
-@media (max-width: 760px) { .location-experience { grid-template-columns: 1fr; padding-top: 5.5rem; gap: 1.7rem; }.location-copy { text-align: center; }.location-eyebrow { justify-content: center; }.location-intro { margin-left: auto; margin-right: auto; }.location-visual { min-height: auto; }.directions h2 { text-align: left; }.location-actions { flex-direction: column; }.location-actions > * { width: 100%; }.location-cta { min-height: 60px; }.map-card { min-height: min(78vw, 350px); }.address-card { text-align: left; }.location-caption { margin-bottom: .5rem; } }
+/* Mobile-first refinement: these rules do not affect the desktop composition. */
+@media (max-width: 760px) {
+  .location-experience {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding: max(5.25rem, calc(env(safe-area-inset-top) + 4.3rem)) max(1.25rem, env(safe-area-inset-right)) max(2.2rem, env(safe-area-inset-bottom)) max(1.25rem, env(safe-area-inset-left));
+  }
+
+  .location-back--top {
+    top: max(1.25rem, env(safe-area-inset-top));
+    left: max(1.25rem, env(safe-area-inset-left));
+    min-height: 44px;
+    padding: .55rem .8rem;
+    border: 1px solid color-mix(in srgb, var(--location-rose) 13%, transparent);
+    background: rgba(255,255,255,.65);
+    backdrop-filter: blur(10px);
+  }
+
+  .location-copy { text-align: left; }
+  .location-eyebrow { justify-content: flex-start; margin-bottom: 1rem; font-size: .66rem; }
+  .location-copy h1 { font-size: clamp(3.1rem, 14vw, 4.3rem); line-height: .9; }
+  .location-intro { max-width: 21rem; margin: 1.25rem 0 0; font-size: .96rem; line-height: 1.68; }
+  .location-divider { margin: 1.75rem 0 1.45rem; }
+
+  .directions h2 { margin-bottom: .85rem; font-size: 1.28rem; text-align: left; }
+  .direction-list { gap: .72rem; }
+  .direction-card { grid-template-columns: 48px minmax(0, 1fr) 24px; gap: .8rem; min-height: 82px; padding: .78rem .85rem; border-radius: 20px; }
+  .direction-icon { width: 48px; height: 48px; border-radius: 16px; }
+  .direction-icon img { width: 26px; height: 26px; }
+  .direction-content strong { font-size: .9rem; }
+  .direction-content small { max-width: 19rem; font-size: .75rem; }
+  .direction-arrow { justify-self: end; font-size: 1.15rem; }
+
+  .location-actions { display: grid; grid-template-columns: 1fr; gap: .7rem; margin-top: 1.45rem; }
+  .location-actions > * { width: 100%; }
+  .location-cta { min-height: 62px; padding-left: 1.35rem; font-size: .9rem; }
+  .location-cta span:last-child { width: 46px; height: 46px; }
+  .location-actions .location-back { min-height: 54px; background: rgba(255,255,255,.7); border: 1px solid color-mix(in srgb, var(--location-rose) 16%, transparent); }
+
+  .location-visual { min-height: auto; gap: .85rem; }
+  .map-card { min-height: 0; aspect-ratio: 1.12 / 1; border-radius: 28px; }
+  .map-art { inset: -8%; transform: rotate(-5deg) scale(1.16); }
+  .map-pin { width: 48px; height: 48px; }
+  .map-pin span { top: 14px; left: 14px; width: 20px; height: 20px; }
+  .map-open { right: .8rem; bottom: .8rem; min-height: 44px; padding: .65rem .85rem; font-size: .76rem; }
+  .address-card { gap: .85rem; padding: .95rem 1rem; border-radius: 22px; text-align: left; }
+  .address-icon { width: 43px; height: 43px; font-size: 1.35rem; }
+  .address-card p { font-size: .75rem; }
+  .location-caption { margin: .3rem 0 0; padding-bottom: .25rem; font-size: .8rem; }
+}
+
+@media (max-width: 390px) {
+  .location-experience { gap: 1.9rem; padding-left: 1rem; padding-right: 1rem; }
+  .location-copy h1 { font-size: clamp(2.95rem, 14vw, 3.6rem); }
+  .direction-card { min-height: 78px; padding: .72rem; }
+  .direction-icon { width: 45px; height: 45px; }
+  .direction-content small { font-size: .72rem; }
+  .map-card { aspect-ratio: 1.05 / 1; }
+}
+
+@media (hover: none) {
+  .direction-card:hover, .location-cta:hover, .location-back:hover, .map-open:hover { transform: none; }
+}
 @media (prefers-reduced-motion: reduce) { .location-copy, .location-visual, .map-pin { animation: none; }.direction-card, .map-card, .location-cta, .location-back { transition: none; } }
