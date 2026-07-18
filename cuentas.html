@@ -3,95 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuentas Bancarias - Colosal Bags</title>
+    <meta name="theme-color" content="#fdf9f8" />
+    <title>Cuentas Bancarias · Colosal Bags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="secondary.css" />
+    <link rel="stylesheet" href="design-system.css" />
   </head>
-  <body>
-    <div class="page-container">
-      <article class="card">
-        <header>
-          <p class="small-note">Datos listos para copiar</p>
-          <h1>Cuentas Bancarias</h1>
-          <p>Haz clic sobre el número de cuenta o la cédula para copiarlo automáticamente al portapapeles.</p>
+  <body class="ds-page accounts-page">
+    <main class="ds-shell accounts-experience">
+      <a class="ds-back" href="index.html#principal" aria-label="Volver al inicio">← <span>Volver</span></a>
+      <div class="ds-ambient ds-ambient--rose" aria-hidden="true"></div>
+      <div class="ds-ambient ds-ambient--olive" aria-hidden="true"></div>
+
+      <article class="ds-surface-card accounts-card" aria-labelledby="accounts-title">
+        <header class="ds-section-header accounts-header">
+          <div>
+            <p class="ds-section-header__eyebrow">Pagos seguros <span aria-hidden="true">✦</span></p>
+            <h1 class="ds-section-header__title" id="accounts-title">Cuentas<br />Bancarias</h1>
+            <p class="ds-section-header__intro">Selecciona los datos que necesitas y tócales para copiarlos al instante.</p>
+          </div>
+          <div class="ds-floating-icon accounts-emblem" aria-hidden="true">
+            <span class="ds-floating-icon__ring ds-floating-icon__ring--outer"></span>
+            <span class="ds-floating-icon__ring ds-floating-icon__ring--inner"></span>
+            <span class="ds-floating-icon__core"><svg viewBox="0 0 64 64" focusable="false"><path d="M9 27 32 12l23 15M14 27h36v25H14zM10 52h44M20 31v16M32 31v16M44 31v16" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
         </header>
 
-        <div class="bank-list">
-          <section class="bank-card">
-            <div class="bank-card__header">
-              <figure class="bank-logo">
-                <img src="popular.png" alt="Logo Banco Popular" />
-              </figure>
-              <div>
-                <p class="bank-name">Banco Popular</p>
-                <p class="bank-owner">Dianne Stephania Pérez García</p>
-              </div>
+        <section class="ds-account-list" aria-label="Datos bancarios">
+          <article class="ds-account-card">
+            <header class="ds-account-card__header"><figure class="ds-account-card__logo"><img src="popular.png" alt="Logo Banco Popular" /></figure><div><h2>Banco Popular</h2><p>Dianne Stephania Pérez García</p></div></header>
+            <div class="ds-account-card__details">
+              <div><span>Cuenta corriente</span><button class="ds-copy-button ds-focusable" type="button" data-copy="popular-cuenta" aria-label="Copiar cuenta corriente de Banco Popular">830728192 <i aria-hidden="true">⧉</i></button></div>
+              <div><span>Cédula</span><button class="ds-copy-button ds-focusable" type="button" data-copy="popular-cedula" aria-label="Copiar cédula de Banco Popular">402-2689435-6 <i aria-hidden="true">⧉</i></button></div>
             </div>
-            <div class="bank-card__body">
-              <div class="bank-row">
-                <span class="bank-label">Cuenta corriente</span>
-                <button type="button" class="copy-link" data-copy="popular-cuenta">830728192</button>
-              </div>
-              <div class="bank-row">
-                <span class="bank-label">Cédula</span>
-                <button type="button" class="copy-link" data-copy="popular-cedula">402-2689435-6</button>
-              </div>
-            </div>
-          </section>
+          </article>
 
-          <section class="bank-card">
-            <div class="bank-card__header">
-              <figure class="bank-logo">
-                <img src="BHD.webp" alt="Logo BHD" />
-              </figure>
-              <div>
-                <p class="bank-name">BHD</p>
-                <p class="bank-owner">Dianne Stephania Pérez García</p>
-              </div>
+          <article class="ds-account-card">
+            <header class="ds-account-card__header"><figure class="ds-account-card__logo"><img src="BHD.webp" alt="Logo BHD" /></figure><div><h2>BHD</h2><p>Dianne Stephania Pérez García</p></div></header>
+            <div class="ds-account-card__details">
+              <div><span>Cuenta de ahorros</span><button class="ds-copy-button ds-focusable" type="button" data-copy="bhd-cuenta" aria-label="Copiar cuenta de ahorros de BHD">24591270031 <i aria-hidden="true">⧉</i></button></div>
+              <div><span>Cédula</span><button class="ds-copy-button ds-focusable" type="button" data-copy="bhd-cedula" aria-label="Copiar cédula de BHD">402-2689435-6 <i aria-hidden="true">⧉</i></button></div>
             </div>
-            <div class="bank-card__body">
-              <div class="bank-row">
-                <span class="bank-label">Cuenta de ahorros</span>
-                <button type="button" class="copy-link" data-copy="bhd-cuenta">24591270031</button>
-              </div>
-              <div class="bank-row">
-                <span class="bank-label">Cédula</span>
-                <button type="button" class="copy-link" data-copy="bhd-cedula">402-2689435-6</button>
-              </div>
-            </div>
-          </section>
+          </article>
 
-          <section class="bank-card">
-            <div class="bank-card__header">
-              <figure class="bank-logo">
-                <img src="BN.webp" alt="Logo Banreservas" />
-              </figure>
-              <div>
-                <p class="bank-name">Banreservas</p>
-                <p class="bank-owner">Franklin Manuel Aquino Severino</p>
-              </div>
+          <article class="ds-account-card">
+            <header class="ds-account-card__header"><figure class="ds-account-card__logo"><img src="BN.webp" alt="Logo Banreservas" /></figure><div><h2>Banreservas</h2><p>Franklin Manuel Aquino Severino</p></div></header>
+            <div class="ds-account-card__details">
+              <div><span>Cuenta de ahorros</span><button class="ds-copy-button ds-focusable" type="button" data-copy="banreservas-cuenta" aria-label="Copiar cuenta de ahorros de Banreservas">9605020888 <i aria-hidden="true">⧉</i></button></div>
+              <div><span>Cédula</span><button class="ds-copy-button ds-focusable" type="button" data-copy="banreservas-cedula" aria-label="Copiar cédula de Banreservas">402-2405696-6 <i aria-hidden="true">⧉</i></button></div>
             </div>
-            <div class="bank-card__body">
-              <div class="bank-row">
-                <span class="bank-label">Cuenta de ahorros</span>
-                <button type="button" class="copy-link" data-copy="banreservas-cuenta">9605020888</button>
-              </div>
-              <div class="bank-row">
-                <span class="bank-label">Cédula</span>
-                <button type="button" class="copy-link" data-copy="banreservas-cedula">402-2405696-6</button>
-              </div>
-            </div>
-          </section>
-        </div>
+          </article>
+        </section>
 
-        <div class="note-panel">
-          <p>📌 Una vez realizado el pago, envíanos el comprobante para confirmar tu orden.</p>
-        </div>
+        <aside class="ds-info-card accounts-note" aria-label="Información de pago"><span class="ds-info-card__icon" aria-hidden="true">✦</span><div><strong>¿Ya realizaste tu pago?</strong><p>Envíanos el comprobante para confirmar tu orden.</p></div></aside>
 
-        <div class="button-row">
-          <a class="button-back" href="index.html#principal">← Volver</a>
-        </div>
+        <div class="accounts-actions"><a class="ds-secondary-button ds-focusable" href="index.html#principal">← Volver</a></div>
+
+        <footer class="ds-trust-footer accounts-footer"><div class="ds-trust-footer__copy"><span class="ds-trust-footer__icon" aria-hidden="true">♢</span><p><strong>Tu información está segura con Colosal.</strong><small>100% confiable y privada.</small></p></div><svg class="accounts-footer__art" viewBox="0 0 160 76" aria-hidden="true"><path d="M5 70C34 43 42 15 79 4M51 72c7-28 25-40 53-46M78 71c18-13 42-16 72-6M38 39c-12-18-11-29 5-35 11 11 9 25-5 35ZM79 24c1-20 12-28 29-23 1 16-10 26-29 23ZM108 41c14-13 28-12 38 2-12 10-26 8-38-2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></footer>
       </article>
-    </div>
+    </main>
 
     <div id="copy-toast" class="copy-toast" aria-live="polite" role="status"></div>
     <script src="script.js"></script>
